@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A strategic case study establishing the Kakinada-Rajamahendravaram Corridor as India's sovereign AI-native data center hub." />
+  <title>Godavari Digital Corridor — India's Sovereign AI Data Hub</title>
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       SCROLL PROGRESS INDICATOR
+  ══════════════════════════════════════════════════════ -->
+  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       MOBILE NAVIGATION OVERLAY
+  ══════════════════════════════════════════════════════ -->
+  <div id="mobile-nav" class="mobile-nav-overlay" role="dialog" aria-label="Mobile navigation">
+    <a href="#intro">Introduction</a>
+    <a href="#physical">Physical Edge</a>
+    <a href="#comparison">Comparison</a>
+    <a href="#network">Network</a>
+    <a href="#energy">Energy</a>
+    <a href="#security">Security</a>
+    <a href="#ecosystem">Ecosystem</a>
+    <a href="#conclusion">Conclusion</a>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       STICKY NAVIGATION BAR
+  ══════════════════════════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-brand">
+      <div class="nav-logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5"/>
+          <path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <div class="nav-brand-text">
+        Godavari Digital Corridor
+        <span>Strategic Infrastructure Study</span>
+      </div>
+    </div>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#physical">Physical Edge</a></li>
+      <li><a href="#network">Network</a></li>
+      <li><a href="#energy">Energy</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="dark-toggle" aria-label="Toggle dark mode">
+        <span id="dark-icon">🌙</span>
+      </button>
+      <button id="hamburger" class="nav-hamburger" aria-label="Open mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════════════════════ -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot" aria-hidden="true"></span>
+        Strategic Infrastructure Report · 2024
+      </div>
+
+      <h1 class="hero-title">
+        India's <em>Sovereign AI</em><br/>
+        Data Hub Begins at the<br/>
+        Godavari Delta
+      </h1>
+
+      <p class="hero-subtitle">
+        A rigorous technical and strategic case study establishing the
+        Kakinada-Rajamahendravaram Corridor as a decisive alternative
+        to Visakhapatnam — benchmarked across latency, geology,
+        energy, and geopolitical resilience.
+      </p>
+
+     <div class="hero-cta-group">
+  <a href="#intro" class="btn-primary">
+    <i class="fa-solid fa-play"></i>
+    Explore the Case Study
+  </a>
+
+  <a href="#comparison" class="btn-ghost">
+    <i class="fa-solid fa-table-columns"></i>
+    Kakinada vs. Vizag
+  </a>
+
+  <a href="assets/report.pdf" target="_blank" class="btn-download">
+  <i class="fa-solid fa-file-pdf"></i>
+  View / Download Report
+</a>
+</div>
+
+    <!-- Hero stats strip -->
+    <div class="hero-stats" role="region" aria-label="Key statistics">
+      <div class="hero-stat">
+        <div class="hero-stat-value" data-count="83" data-suffix=" km">0 km</div>
+        <div class="hero-stat-label">Closer to Singapore</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value" data-count="2.4" data-suffix=" GW">0 GW</div>
+        <div class="hero-stat-label">Dedicated Power Capacity</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value" data-count="99.99" data-suffix="%">0%</div>
+        <div class="hero-stat-label">Tier-IV Uptime Target</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value" data-count="50" data-suffix=" ms">0 ms</div>
+        <div class="hero-stat-label">Max APS Failover Time</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       INTRODUCTION SECTION
+  ══════════════════════════════════════════════════════ -->
+  <section id="intro" class="section" data-section="intro">
+    <div class="container">
+      <div class="intro-layout">
+
+        <!-- Left: Text -->
+        <div>
+          <p class="section-label">
+            <i class="fa-solid fa-map-pin" aria-hidden="true"></i>
+            The Strategic Vision
+          </p>
+          <h2 class="section-title">A New Nerve Center for India's Digital Economy</h2>
+          <p class="section-lead">
+            The site selection for a sovereign AI-native data center isn't a policy decision —
+            it's a physics problem. The Kakinada coast, shaped by millions of years of
+            Godavari sediment deposition, presents a configuration of geological, hydrological,
+            and geopolitical conditions that no engineered site can replicate.
+          </p>
+          <br/>
+          <p style="font-size:0.95rem; color:var(--text-mid); line-height:1.8;">
+            Positioned away from military-concentrated zones like Visakhapatnam, yet connected
+            to the East Coast's most stable maritime and terrestrial corridors, this corridor
+            transforms the region from a passive industrial belt into an active hub for
+            hyperscale cloud providers, sovereign AI compute, and critical national
+            data infrastructure.
+          </p>
+          <br/>
+          <p style="font-size:0.95rem; color:var(--text-mid); line-height:1.8;">
+            This study benchmarks 35+ parameters across geology, subsea cable infrastructure,
+            network latency, energy architecture, geopolitical risk, and circular economy
+            potential — establishing a definitive case for the <strong style="color:var(--azure);">Godavari Digital Corridor</strong>
+            as India's optimal Tier-IV sovereign data hub.
+          </p>
+        </div>
+
+        <!-- Right: Visual card -->
+        <div class="intro-visual">
+          <div class="intro-map-card">
+            <!-- Inline SVG map illustration -->
+            <div class="map-svg-wrap">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-label="Map showing Kakinada's strategic position">
+                <!-- India outline simplified -->
+                <path d="M80 20 L180 10 L250 30 L310 20 L350 60 L360 130 L340 200 L290 260 L240 290 L200 295 L160 270 L120 230 L70 180 L40 120 L55 60 Z"
+                      fill="none" stroke="rgba(61,160,216,0.3)" stroke-width="1.5"/>
+
+                <!-- Bay of Bengal hint -->
+                <ellipse cx="320" cy="200" rx="60" ry="80" fill="rgba(26,122,191,0.08)" stroke="none"/>
+
+                <!-- Route line: Singapore to Kakinada -->
+                <path d="M360 250 Q300 200 260 170 Q230 155 218 148"
+                      fill="none" stroke="rgba(100,204,197,0.6)" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+                <!-- Singapore dot -->
+                <circle cx="360" cy="250" r="5" fill="#64ccc5" opacity="0.8"/>
+                <text x="340" y="268" font-size="9" fill="rgba(220,232,244,0.5)" font-family="monospace">Singapore</text>
+
+                <!-- Kakinada pulse ring -->
+                <circle cx="218" cy="148" r="18" fill="none" stroke="rgba(61,160,216,0.2)" stroke-width="2">
+                  <animate attributeName="r" values="12;24;12" dur="3s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" values="0.5;0;0.5" dur="3s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="218" cy="148" r="6" fill="#3da0d8"/>
+                <text x="225" y="144" font-size="9" fill="rgba(220,232,244,0.9)" font-family="monospace" font-weight="700">Kakinada</text>
+
+                <!-- Hyderabad dot -->
+                <circle cx="170" cy="130" r="4" fill="rgba(232,197,106,0.7)"/>
+                <text x="140" y="128" font-size="8" fill="rgba(220,232,244,0.5)" font-family="monospace">Hyderabad</text>
+
+                <!-- Vijayawada dot -->
+                <circle cx="200" cy="155" r="3" fill="rgba(255,255,255,0.4)"/>
+                <text x="178" y="167" font-size="8" fill="rgba(220,232,244,0.4)" font-family="monospace">Vijayawada</text>
+
+                <!-- Vizag dot -->
+                <circle cx="248" cy="118" r="4" fill="rgba(240,106,106,0.6)"/>
+                <text x="252" y="115" font-size="8" fill="rgba(240,106,106,0.6)" font-family="monospace">Vizag ✗</text>
+
+                <!-- Connector lines to Hyderabad -->
+                <line x1="218" y1="148" x2="170" y2="130" stroke="rgba(61,160,216,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="218" y1="148" x2="200" y2="155" stroke="rgba(61,160,216,0.25)" stroke-width="1" stroke-dasharray="3,3"/>
+
+                <!-- Distance label -->
+                <text x="300" y="185" font-size="8" fill="rgba(100,204,197,0.7)" font-family="monospace">83 km closer</text>
+                <text x="300" y="196" font-size="8" fill="rgba(100,204,197,0.5)" font-family="monospace">than Chennai</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Mini stats below map -->
+          <div class="intro-badge-row">
+            <div class="mini-badge">
+              <div class="mini-badge-val">Zone II</div>
+              <div class="mini-badge-label">Seismic Classification</div>
+            </div>
+            <div class="mini-badge">
+              <div class="mini-badge-val">3–5m</div>
+              <div class="mini-badge-label">Cable Burial Depth</div>
+            </div>
+            <div class="mini-badge">
+              <div class="mini-badge-val">450km</div>
+              <div class="mini-badge-label">To Hyderabad</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       PHYSICAL ADVANTAGES SECTION
+  ══════════════════════════════════════════════════════ -->
+  <section id="physical" class="section" data-section="physical">
+    <div class="container">
+      <p class="section-label">
+        <i class="fa-solid fa-mountain" aria-hidden="true"></i>
+        Physical &amp; Geological Edge
+      </p>
+      <h2 class="section-title">Nature Engineered the Perfect Data Center Site</h2>
+      <p class="section-lead">
+        The immutable laws of geology and physics favour Kakinada. Millions of years of
+        Godavari river activity have created a coastal profile that would cost trillions
+        to artificially replicate.
+      </p>
+
+      <div class="advantages-grid" role="list">
+
+        <article class="adv-card" role="listitem">
+          <div class="adv-icon blue" aria-hidden="true"><i class="fa-solid fa-water"></i></div>
+          <h3>Flat Seabed — Zero Stress Points</h3>
+          <p>
+            The deltaic continental shelf maintains an exceptionally low gradient,
+            allowing submarine fiber optic cables to rest flush against the seafloor.
+            This eliminates span-induced stress fractures, simplifies route planning,
+            and guarantees optimal signal integrity from the moment of installation.
+          </p>
+        </article>
+
+        <article class="adv-card" role="listitem">
+          <div class="adv-icon teal" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Deep Silt Burial — Passive Security</h3>
+          <p>
+            Fine-grained deltaic sediments allow cables to be "ploughed" 3–5 metres
+            into the seabed. The silt naturally reseals over the cable, creating an
+            invisible, virtually indestructible layer of protection against fishing
+            trawlers, ship anchors, and targeted sabotage.
+          </p>
+        </article>
+
+        <article class="adv-card" role="listitem">
+          <div class="adv-icon ocean" aria-hidden="true"><i class="fa-solid fa-anchor"></i></div>
+          <h3>No Rocky Seamounts</h3>
+          <p>
+            Visakhapatnam sits on the Eastern Ghats Mobile Belt, which projects into
+            the sea as rocky, abrasive outcrops. Kakinada's basement rock is buried
+            beneath thick Quaternary sediments — removing the primary cause of cable
+            abrasion and dramatically extending Mean Time Between Failures.
+          </p>
+        </article>
+
+        <article class="adv-card" role="listitem">
+          <div class="adv-icon gold" aria-hidden="true"><i class="fa-solid fa-globe"></i></div>
+          <h3>Tectonic Stability — Seismic Zone II</h3>
+          <p>
+            The Krishna-Godavari basin is a passive margin basin, far from active
+            plate boundaries. Classified Seismic Zone II/III under Indian standards,
+            it ensures the physical integrity of server racks, precision cooling
+            systems, and power backup units — protecting capital and data continuity.
+          </p>
+        </article>
+
+        <article class="adv-card" role="listitem">
+          <div class="adv-icon purple" aria-hidden="true"><i class="fa-solid fa-maximize"></i></div>
+          <h3>Horizontal Scaling — Infinite Flat Land</h3>
+          <p>
+            The Godavari delta is a vast alluvial plain. Unlike hilly Vizag — where
+            expansion requires expensive blasting and terracing — Kakinada offers
+            contiguous flat terrain ideal for warehouse-scale AI server halls and
+            co-located renewable energy farms, allowing modular growth on demand.
+          </p>
+        </article>
+
+        <article class="adv-card" role="listitem">
+          <div class="adv-icon coral" aria-hidden="true"><i class="fa-solid fa-droplet"></i></div>
+          <h3>Abundant Freshwater — Godavari Aquifer</h3>
+          <p>
+            Fed by the Sir Arthur Cotton Barrage and underlain by high-porosity
+            alluvial aquifers, Kakinada enjoys surplus freshwater. This directly
+            contrasts Vizag's chronic water stress, caused by impermeable metamorphic
+            rock, steep runoff topography, and coastal saline intrusion.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       COMPARISON TABLE
+  ══════════════════════════════════════════════════════ -->
+  <section id="comparison" class="section" data-section="comparison">
+    <div class="container">
+      <div class="comparison-header">
+        <p class="section-label">
+          <i class="fa-solid fa-table-columns" aria-hidden="true"></i>
+          Head-to-Head Analysis
+        </p>
+        <h2 class="section-title">Kakinada vs. Visakhapatnam</h2>
+        <p class="section-lead">
+          When measured against every parameter critical to sovereign data infrastructure,
+          the Godavari Corridor wins decisively and consistently.
+        </p>
+      </div>
+
+      <div class="comparison-table" role="table" aria-label="Kakinada vs Visakhapatnam comparison">
+        <div class="cmp-header-row" role="row">
+          <div class="cmp-col-label feature" role="columnheader">Parameter</div>
+          <div class="cmp-col-label kakinada" role="columnheader">
+            <i class="fa-solid fa-check-circle" aria-hidden="true"></i> Kakinada
+          </div>
+          <div class="cmp-col-label vizag" role="columnheader">
+            <i class="fa-solid fa-times-circle" aria-hidden="true"></i> Visakhapatnam
+          </div>
+        </div>
+
+        <div class="cmp-row" role="row">
+          <div class="cmp-cell label" role="cell">Seabed Geology</div>
+          <div class="cmp-cell good" role="cell">Flat deltaic sediment — ideal for burial</div>
+          <div class="cmp-cell bad" role="cell">Rocky Eastern Ghats extension — abrasive</div>
+        </div>
+        <div class="cmp-row" role="row">
+          <div class="cmp-cell label" role="cell">Cable Burial Depth</div>
+          <div class="cmp-cell good" role="cell">3–5 metres — passive security</div>
+          <div class="cmp-cell bad" role="cell">Surface-level — exposed to threats</div>
+        </div>
+        <div class="cmp-row" role="row">
+          <div class="cmp-cell label" role="cell">Seismic Risk</div>
+          <div class="cmp-cell good" role="cell">Zone II/III — passive margin basin</div>
+          <div class="cmp-cell bad" role="cell">Zone II–III but higher ground vibration</div>
+        </div>
+        <div class="cmp-row" role="row">
+          <div class="cmp-cell label" role="cell">Land Availability</div>
+          <div class="cmp-cell good" role="cell">Vast flat alluvial plain — unlimited scale</div>
+          <div class="cmp-cell bad" role="cell">Hilly — costly blasting &amp; terracing needed</div>
+        </div>
+        <div class="cmp-row" role="row">
+          <div class="cmp-cell label" role="cell">Freshwater Supply</div>
+          <div class="cmp-cell good" role="cell">Godavari perennial — high porosity aquifers</div>
+          <div class="cmp-cell bad" role="cell">Chronic scarcity — saline intrusion risk</div>
+        </div>
+        <div class="cmp-row" role="row">
+          <div class="cmp-cell label" role="cell">Distance to Singapore</div>
+          <div class="cmp-cell good" role="cell">~83 km shorter cable route (Great Circle)</div>
+          <div class="cmp-cell bad" role="cell">Longer route — higher CapEx per km</div>
+        </div>
+        <div class="cmp-row" role="row">
+          <div class="cmp-cell label" role="cell">Air Quality / PM2.5</div>
+          <div class="cmp-cell good" role="cell">Low — delta ventilation flushes pollutants</div>
+          <div class="cmp-cell bad" role="cell">High — bowl effect traps industrial emissions</div>
+        </div>
+        <div class="cmp-row" role="row">
+          <div class="cmp-cell label" role="cell">Military Target Risk</div>
+          <div class="cmp-cell good" role="cell">Below adversary threshold — low-profile</div>
+          <div class="cmp-cell bad" role="cell">Major naval base — high-value target</div>
+        </div>
+        <div class="cmp-row" role="row">
+          <div class="cmp-cell label" role="cell">Power Infrastructure</div>
+          <div class="cmp-cell good" role="cell">2.4 GW Samalkot + KG Basin gas supply</div>
+          <div class="cmp-cell bad" role="cell">Grid-dependent — no dedicated baseload</div>
+        </div>
+        <div class="cmp-row" role="row">
+          <div class="cmp-cell label" role="cell">OPEX (Land + Labor)</div>
+          <div class="cmp-cell good" role="cell">Tier-2 pricing — structural cost advantage</div>
+          <div class="cmp-cell bad" role="cell">Tier-1 urban costs — higher premiums</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       NETWORK ARCHITECTURE SECTION
+  ══════════════════════════════════════════════════════ -->
+  <section id="network" class="section" data-section="network">
+    <div class="container">
+      <p class="section-label">
+        <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+        Subsea &amp; Terrestrial Network
+      </p>
+      <h2 class="section-title">The Physics of Data — Engineered for Speed</h2>
+      <p class="section-lead">
+        Data travels at roughly two-thirds the speed of light through fiber optic glass.
+        Every kilometre saved is latency erased. Kakinada's geography makes it a
+        mathematically optimal landing point.
+      </p>
+
+      <div class="network-layout">
+
+        <!-- Latency visualization panel -->
+        <div>
+          <div class="latency-viz">
+            <div class="latency-title">
+              <i class="fa-solid fa-bolt" aria-hidden="true"></i>&nbsp;
+              Round-Trip Latency — Kakinada Advantage
+            </div>
+
+            <div class="route-item">
+              <span class="route-city">Singapore RTT</span>
+              <div class="route-bar-wrap">
+                <div class="route-bar singapore" style="width:62%"></div>
+              </div>
+              <span class="route-val">&lt; 30 ms</span>
+            </div>
+
+            <div class="route-item">
+              <span class="route-city">To Hyderabad</span>
+              <div class="route-bar-wrap">
+                <div class="route-bar hyderabad" style="width:45%"></div>
+              </div>
+              <span class="route-val">450 km</span>
+            </div>
+
+            <div class="route-item">
+              <span class="route-city">To Vijayawada</span>
+              <div class="route-bar-wrap">
+                <div class="route-bar vijayawada" style="width:15%"></div>
+              </div>
+              <span class="route-val">150 km</span>
+            </div>
+
+            <div class="route-item">
+              <span class="route-city">vs Chennai RTT</span>
+              <div class="route-bar-wrap">
+                <div class="route-bar" style="width:80%; background:linear-gradient(90deg,rgba(240,106,106,0.6),rgba(240,106,106,0.3));"></div>
+              </div>
+              <span class="route-val" style="color:rgba(240,106,106,0.8)">&gt; 45 ms</span>
+            </div>
+
+            <div style="margin-top:8px; padding:14px; background:rgba(100,204,197,0.08); border-radius:10px; border:1px solid rgba(100,204,197,0.15);">
+              <span style="font-size:0.78rem; color:rgba(220,232,244,0.55); font-family:var(--font-mono);">
+                Kakinada is ~45 nautical miles (83 km) closer to Singapore than Chennai via
+                the Great Circle Route — saving millions in cable CapEx and delivering
+                measurably lower RTT for AI inference workloads.
+              </span>
+            </div>
+
+            <!-- Ring topology -->
+            <div class="ring-topology">
+              <h4>Ring Topology — Automatic Protection Switching</h4>
+              <div class="ring-route">
+                <span class="route-tag">A</span>
+                Kakinada → Rajahmundry → Hyderabad
+              </div>
+              <div class="ring-route">
+                <span class="route-tag">B</span>
+                Kakinada → Vijayawada → Hyderabad
+              </div>
+              <div style="margin-top:12px; font-size:0.8rem; color:rgba(220,232,244,0.45);">
+                SONET/SDH APS automatically reroutes traffic in under 50 ms if one path fails —
+                invisible to users and guaranteeing the 99.99% uptime SLA.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Network advantages list -->
+        <div>
+          <ul class="network-points">
+            <li>
+              <div class="np-icon" aria-hidden="true"><i class="fa-solid fa-satellite-dish"></i></div>
+              <div class="np-body">
+                <h4>The Singapore-Kakinada Link</h4>
+                <p>Kakinada's latitude of 16.9°N places it geometrically higher on the Great
+                Circle arc toward the Malacca Strait than Chennai. Shaving 83 km off a
+                transoceanic cable route reduces procurement, manufacturing, and laying
+                costs by millions of dollars — attracting more cable consortiums and
+                increasing redundancy.</p>
+              </div>
+            </li>
+            <li>
+              <div class="np-icon" aria-hidden="true"><i class="fa-solid fa-stopwatch"></i></div>
+              <div class="np-body">
+                <h4>Ultra-Low Latency for AI &amp; HFT</h4>
+                <p>For high-frequency trading, a 2–3 millisecond difference means millions of
+                dollars in arbitrage. For real-time AI applications — autonomous vehicles,
+                remote surgery, grid management — latency is not performance, it is safety.
+                Kakinada's physical proximity to Southeast Asian data exchange hubs is an
+                irreplaceable structural advantage.</p>
+              </div>
+            </li>
+            <li>
+              <div class="np-icon" aria-hidden="true"><i class="fa-solid fa-arrows-to-dot"></i></div>
+              <div class="np-body">
+                <h4>Eastern CDN Hub — The Topological Centre</h4>
+                <p>Kakinada sits at the median point of India's eastern coastline, equidistant
+                from Kolkata and Chennai. As a Content Delivery Network anchor node, it
+                minimises average latency for hundreds of millions of users across Eastern
+                India — reducing buffering for OTT platforms and improving Quality of Service
+                for streaming, gaming, and real-time applications.</p>
+              </div>
+            </li>
+            <li>
+              <div class="np-icon" aria-hidden="true"><i class="fa-solid fa-plane"></i></div>
+              <div class="np-body">
+                <h4>Triple-Gateway Airport Redundancy</h4>
+                <p>The corridor sits within equidistant reach of three distinct airports:
+                Rajahmundry (55 km), Bhogapuram-Vizag (65 km), and Vijayawada (70 km).
+                If any gateway is grounded, engineering teams can hot-swap to another —
+                keeping Mean Time to Repair low and uptime SLAs intact for global
+                hyperscalers like Google, AWS, and Microsoft.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       ENERGY & COOLING SECTION
+  ══════════════════════════════════════════════════════ -->
+  <section id="energy" class="section" data-section="energy">
+    <div class="container">
+      <p class="section-label">
+        <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+        Energy &amp; Cooling Architecture
+      </p>
+      <h2 class="section-title">Power Without Compromise — 24/7 Carbon-Neutral Baseload</h2>
+      <p class="section-lead">
+        A hyperscale AI data center is fundamentally a machine that converts electricity
+        into computation and heat. The Godavari Corridor solves both sides of this equation
+        through industrial symbiosis and geography.
+      </p>
+
+      <div class="energy-intro">
+        <div>
+          <p style="font-size:0.96rem; color:var(--text-mid); line-height:1.85; margin-bottom:20px;">
+            The Samalkot region hosts over 2.4 GW of existing natural gas generation capacity —
+            currently underutilised due to gas shortages. Redirecting this through dedicated
+            high-voltage transmission corridors to a data center hub bypasses the 7–10 year
+            lead time required to permit and build greenfield power plants. AI training clusters
+            demand power immediately. Samalkot delivers it.
+          </p>
+          <p style="font-size:0.96rem; color:var(--text-mid); line-height:1.85;">
+            Simultaneously, Greenko's Green Ammonia initiative paired with the Reliance
+            Samalkot plant offers a pathway to zero-carbon baseload. Green Ammonia (NH₃)
+            acts as a hydrogen carrier: excess renewable energy electrolyses water into
+            hydrogen, which is combined with nitrogen via the Haber-Bosch process and stored
+            as stable liquid ammonia. When power is needed, the ammonia is cracked back —
+            releasing hydrogen for turbines. The only combustion byproducts are N₂ and H₂O.
+          </p>
+        </div>
+        <div class="energy-stat-box">
+          <h4>Dedicated Power Sink</h4>
+          <div class="energy-big-num">
+            <span data-count="2.4" data-suffix=" GW" class="stat-count">2.4 GW</span>
+          </div>
+          <p class="energy-stat-desc">
+            Samalkot existing capacity — ready for immediate re-direction without
+            greenfield construction timelines.
+          </p>
+          <br/>
+          <h4 style="margin-top:8px;">PUE Target</h4>
+          <div class="energy-big-num">≈ 1.0</div>
+          <p class="energy-stat-desc">
+            Godavari hydro-cooling enables liquid immersion at scale, driving Power
+            Usage Effectiveness near the theoretical minimum.
+          </p>
+        </div>
+      </div>
+
+      <div class="energy-cards">
+        <article class="energy-card">
+          <div class="energy-card-icon">⚡</div>
+          <h3>Samalkot Utility Pivot</h3>
+          <p>
+            Re-purposing existing gas infrastructure eliminates the decade-long lead
+            time for new generation assets, delivering power-on-tap for AI training
+            clusters that demand continuous, uninterrupted grid-scale electricity.
+          </p>
+        </article>
+
+        <article class="energy-card">
+          <div class="energy-card-icon">🟢</div>
+          <h3>Green Ammonia Baseload</h3>
+          <p>
+            Ammonia stores renewable energy for months — solving the "Duck Curve"
+            problem of solar and wind intermittency. Mitsubishi Power's ammonia
+            co-firing roadmap targets 100% ammonia-fired turbines by 2030, with
+            Samalkot-compatible infrastructure already tested at 20% blends.
+          </p>
+        </article>
+
+        <article class="energy-card">
+          <div class="energy-card-icon">🌊</div>
+          <h3>Godavari Hydro-Cooling</h3>
+          <p>
+            Liquid immersion cooling submerges servers in dielectric fluid, transferring
+            heat to a closed-loop water system. The Godavari's vast cool water supply
+            acts as the ultimate heat sink — reducing data center energy consumption
+            by 20%+ and enabling ultra-high GPU rack densities.
+          </p>
+        </article>
+
+        <article class="energy-card">
+          <div class="energy-card-icon">🏭</div>
+          <h3>KG Basin Fuel Security</h3>
+          <p>
+            Proximity to the Krishna-Godavari basin allows backup generators to run
+            on piped natural gas rather than diesel trucking chains — achieving 60%+
+            combined-cycle efficiency and ensuring Tier IV fault tolerance even during
+            regional grid outages or natural disasters.
+          </p>
+        </article>
+
+        <article class="energy-card">
+          <div class="energy-card-icon">🔌</div>
+          <h3>Virtual Power Plant (VPP)</h3>
+          <p>
+            The hyperscale facility can participate in demand response programmes —
+            using smart controls to momentarily reduce grid draw or feed stored power
+            back during peak hours. This transforms the data center from a passive
+            consumer into an active partner in Andhra Pradesh's grid management.
+          </p>
+        </article>
+
+        <article class="energy-card">
+          <div class="energy-card-icon">💨</div>
+          <h3>Clean Air — Lower Filter OPEX</h3>
+          <p>
+            Kakinada's coastal delta environment has significantly lower ambient PM2.5
+            than industrial metros. Cleaner intake air extends HEPA filter life, reduces
+            fan energy (improving PUE), and protects server hardware from the
+            micro-corrosion caused by airborne sulfur and chlorides common in Vizag.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       SECURITY & RESILIENCE SECTION
+  ══════════════════════════════════════════════════════ -->
+  <section id="security" class="section" data-section="security">
+    <div class="container">
+      <p class="section-label">
+        <i class="fa-solid fa-shield" aria-hidden="true"></i>
+        Security &amp; Geopolitical Resilience
+      </p>
+      <h2 class="section-title">Security Through Geography — Not Software</h2>
+      <p class="section-lead">
+        In an era of hybrid warfare, data centers are critical national infrastructure.
+        The Godavari Corridor's security paradigm is built into its physical location —
+        protection that no firewall or security team can replicate.
+      </p>
+
+      <div class="security-layout">
+
+        <!-- Security cards -->
+        <div class="security-cards">
+
+          <article class="sec-card">
+            <div class="sec-card-icon" aria-hidden="true"><i class="fa-solid fa-crosshairs"></i></div>
+            <div>
+              <h4>Non-Military Isolation</h4>
+              <p>Military targeting doctrine follows "Effects-Based Operations" — striking
+              assets that create immediate strategic effects. Visakhapatnam is a major
+              naval base, making it a Tier-1 adversary target. Kakinada, absent military
+              infrastructure, falls below the threshold of strategic value in conventional
+              war-fighting, dramatically lowering kinetic attack probability.</p>
+            </div>
+          </article>
+
+          <article class="sec-card">
+            <div class="sec-card-icon" aria-hidden="true"><i class="fa-solid fa-bolt"></i></div>
+            <div>
+              <h4>EMP Hardening — Faraday Cage Advantage</h4>
+              <p>A High-Altitude EMP burst generates electric fields up to 50,000 V/m.
+              Kakinada's geographic distance from primary military targets attenuates EMP
+              intensity before it arrives, reducing hardening requirements and increasing
+              electronics survival probability — preserving the nation's financial and
+              governance records even in extreme scenarios.</p>
+            </div>
+          </article>
+
+          <article class="sec-card">
+            <div class="sec-card-icon" aria-hidden="true"><i class="fa-solid fa-satellite"></i></div>
+            <div>
+              <h4>Satellite Signature Reduction</h4>
+              <p>Modern reconnaissance uses multispectral imaging to detect thermal plumes
+              and geometric footprints. Kakinada's existing industrial landscape — fertilizer
+              plants, gas processing, agro-facilities — provides natural "signature management"
+              that makes a data center indistinguishable from surrounding industry,
+              denying adversaries pattern-of-life analysis.</p>
+            </div>
+          </article>
+
+          <article class="sec-card">
+            <div class="sec-card-icon" aria-hidden="true"><i class="fa-solid fa-submarine"></i></div>
+            <div>
+              <h4>Acoustic &amp; AUV Stealth</h4>
+              <p>Deep silt burial (3–5 m) attenuates both sonar reflection and magnetometer
+              signatures. An adversary AUV patrolling Kakinada waters would detect only a
+              flat, featureless seabed — unable to locate, tap, or sever the subsea cable
+              arteries that carry India's sovereign data to the world.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Risk differential visual -->
+        <div class="risk-dial-section">
+          <h3 class="risk-header">Risk Differential — Kakinada vs. Vizag</h3>
+          <p style="font-size:0.88rem; color:var(--text-mid); line-height:1.7; margin-bottom:28px;">
+            Across every security vector, the Godavari Corridor maintains a
+            significantly lower risk profile — a structural advantage rooted in
+            geography that no policy or security investment can fully compensate for
+            in Visakhapatnam.
+          </p>
+
+          <div class="risk-compare-bars">
+            <div class="risk-bar-item">
+              <div class="risk-bar-meta">
+                <span class="risk-bar-name">Kakinada — Kinetic Attack Risk</span>
+                <span class="risk-bar-pct">Low</span>
+              </div>
+              <div class="risk-track">
+                <div class="risk-fill low" style="width:18%"></div>
+              </div>
+            </div>
+            <div class="risk-bar-item">
+              <div class="risk-bar-meta">
+                <span class="risk-bar-name">Vizag — Kinetic Attack Risk</span>
+                <span class="risk-bar-pct">High</span>
+              </div>
+              <div class="risk-track">
+                <div class="risk-fill high" style="width:85%"></div>
+              </div>
+            </div>
+            <div class="risk-bar-item">
+              <div class="risk-bar-meta">
+                <span class="risk-bar-name">Kakinada — Cable Detectability</span>
+                <span class="risk-bar-pct">Very Low</span>
+              </div>
+              <div class="risk-track">
+                <div class="risk-fill low" style="width:10%"></div>
+              </div>
+            </div>
+            <div class="risk-bar-item">
+              <div class="risk-bar-meta">
+                <span class="risk-bar-name">Vizag — Cable Detectability</span>
+                <span class="risk-bar-pct">High</span>
+              </div>
+              <div class="risk-track">
+                <div class="risk-fill high" style="width:72%"></div>
+              </div>
+            </div>
+            <div class="risk-bar-item">
+              <div class="risk-bar-meta">
+                <span class="risk-bar-name">Kakinada — Social Stability Index</span>
+                <span class="risk-bar-pct">High</span>
+              </div>
+              <div class="risk-track">
+                <div class="risk-fill low" style="width:82%"></div>
+              </div>
+            </div>
+            <div class="risk-bar-item">
+              <div class="risk-bar-meta">
+                <span class="risk-bar-name">Vizag — Social Stability Index</span>
+                <span class="risk-bar-pct">Moderate</span>
+              </div>
+              <div class="risk-track">
+                <div class="risk-fill" style="width:52%; background:linear-gradient(90deg,rgba(232,197,106,0.7),rgba(232,197,106,0.3));"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="risk-note">
+            <strong>Socio-Economic Stability Factor:</strong> The Krishna-Godavari belt's
+            agrarian stability, lower floating population, and stronger community oversight
+            translate to reduced risk of organized crime, labor unrest, and insider threats —
+            lowering insurance premiums and security costs as quantifiable operational savings.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       CIRCULAR ECONOMY / ECOSYSTEM SECTION
+  ══════════════════════════════════════════════════════ -->
+  <section id="ecosystem" class="section" data-section="ecosystem">
+    <div class="container">
+      <div class="ecosystem-header">
+        <p class="section-label">
+          <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+          Circular Economy &amp; Ecosystem
+        </p>
+        <h2 class="section-title">A Data Center That Feeds the Region</h2>
+        <p class="section-lead">
+          Traditional data centers export only waste heat and carbon. The Godavari
+          Corridor is designed as a closed-loop industrial ecosystem where every
+          output stream becomes an input for local communities.
+        </p>
+      </div>
+
+      <div class="circular-grid">
+        <article class="circular-card">
+          <div class="cc-icon">🦐</div>
+          <h4>Aquaculture Heat Integration</h4>
+          <p>
+            Server waste heat (30–40°C) is transferred via plate heat exchangers
+            to Vannamei shrimp ponds — extending growing seasons, accelerating
+            harvests, and boosting yields for one of the region's primary
+            export industries.
+          </p>
+        </article>
+
+        <article class="circular-card">
+          <div class="cc-icon">🌾</div>
+          <h4>Agri-Thermal Warming</h4>
+          <p>
+            Warm closed-loop water piped to greenhouse operations promotes
+            faster plant maturation and prevents frost damage — validated by
+            AWS's Umatilla, Oregon deployment where millions of gallons
+            irrigate corn and soybean crops annually.
+          </p>
+        </article>
+
+        <article class="circular-card">
+          <div class="cc-icon">🔄</div>
+          <h4>Industrial Symbiosis</h4>
+          <p>
+            Greenko's green ammonia output becomes Reliance Samalkot's fuel input.
+            The data center's waste heat becomes the aquaculture sector's energy input.
+            A textbook circular economy — zero-waste by design, not regulation.
+          </p>
+        </article>
+
+        <article class="circular-card">
+          <div class="cc-icon">📡</div>
+          <h4>Logistics Hub Effect</h4>
+          <p>
+            The Kakinada Deep Water Port supports Ro-Ro heavy-lift vessels for
+            modular data center pod deployment. Pre-fabricated server halls can
+            be floated in, connected to power and cooling in a fraction of
+            traditional build time.
+          </p>
+        </article>
+      </div>
+
+      <!-- Expressway integration note -->
+      <div style="margin-top:32px; background:rgba(26,122,191,0.08); border:1px solid rgba(61,160,216,0.2); border-radius:var(--radius-md); padding:28px; display:flex; gap:20px; align-items:flex-start;">
+        <div style="font-size:2rem; flex-shrink:0;">🛣️</div>
+        <div>
+          <h4 style="font-family:var(--font-display); font-size:1.1rem; color:var(--white); margin-bottom:8px;">
+            Devarapalli-Khammam Expressway — Logistics Velocity
+          </h4>
+          <p style="font-size:0.87rem; color:rgba(220,232,244,0.6); line-height:1.7;">
+            The greenfield expressway creates a dedicated, frictionless corridor to Hyderabad — India's premier IT,
+            Pharma, and Biotech hub — reducing transit time by 30–40% compared to congested national highways.
+            Hyderabad's research institutions generate petabytes of genomic sequencing and drug discovery simulation
+            data that require AI compute processing. This high-speed link ensures physical and logical data delivery
+            with minimal delay, completing the Corridor's role as Andhra Pradesh's digital spine.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       CONCLUSION SECTION
+  ══════════════════════════════════════════════════════ -->
+  <section id="conclusion" class="section" data-section="conclusion">
+    <div class="container">
+      <div class="conclusion-wrap">
+        <p class="section-label">
+          <i class="fa-solid fa-flag" aria-hidden="true"></i>
+          Final Assessment
+        </p>
+        <h2 class="conclusion-title">
+          The Definitive Location for<br/>
+          India's Digital Sovereignty
+        </h2>
+        <p class="conclusion-text">
+          The Kakinada-Rajamahendravaram Corridor offers a scientifically and strategically
+          superior foundation for India's Sovereign AI-Native Data Center Hub. When benchmarked
+          against Visakhapatnam across every critical parameter, the "Godavari Strategic Edge"
+          delivers decisive, durable advantages that no policy incentive or engineering workaround
+          can replicate — because they are built into the geology, hydrology, and geopolitics of the land itself.
+          <br/><br/>
+          By transforming geological and geographical assets into strategic infrastructure,
+          the Godavari Corridor is not merely an alternative site. It is <em>the</em> definitive
+          location for building a secure, scalable, and sustainable future for India's digital economy.
+        </p>
+
+        <div class="conclusion-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">🏔️</div>
+            <h4>Geological Superiority</h4>
+            <p>A flat, sedimentary seabed enables secure, invisible deep burial of cables — unlike Vizag's rocky, vulnerable offshore terrain.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">⚡</div>
+            <h4>Sustainable Power</h4>
+            <p>Proximity to Samalkot's 2.4 GW and KG Basin gas, combined with green ammonia conversion, creates 24/7 carbon-neutral baseload.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🌐</div>
+            <h4>Network Centrality</h4>
+            <p>Position at the topological centre of India's eastern coastline minimises latency for hundreds of millions and provides a shorter, cheaper link to Singapore.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🛡️</div>
+            <h4>Strategic Security</h4>
+            <p>Non-military isolation, cable stealth, EMP attenuation, and high social stability combine into a risk profile Vizag cannot match.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">📈</div>
+            <h4>Operational Resilience</h4>
+            <p>Vast alluvial plains for horizontal scaling, abundant Godavari freshwater for cooling, and Tier-2 OPEX pricing create compounding cost advantages.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🔄</div>
+            <h4>Circular Economy</h4>
+            <p>Waste heat powers aquaculture, ammonia flows between industries, and the deep-water port enables plug-and-play data hall deployment — a self-reinforcing regional ecosystem.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-brand">
+      <em>Godavari Digital Corridor</em> — Strategic Infrastructure Study
+    </div>
+    <div class="footer-note">
+      TIER-IV SOVEREIGN AI DATA HUB · KAKINADA-RAJAMAHENDRAVARAM
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="main.js"></script>
+
+</body>
+</html>
